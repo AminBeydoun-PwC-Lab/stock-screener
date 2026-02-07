@@ -7,10 +7,10 @@ import { TrendingUp, TrendingDown, Minus, ChevronDown, ChevronUp, Plus, X, Info 
 // ============================================================================
 
 // CORS proxy wrapper (Yahoo blocks direct browser requests)
-// const corsProxy = (url) =>
-//  `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
 const corsProxy = (url) =>
-  `https://cors.isomorphic-git.org/${url}`;
+ `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
+// diferent proxt -- const corsProxy = (url) =>
+//  `https://cors.isomorphic-git.org/${url}`;
 
 const fetchYahooFinanceData = async (ticker) => {
   try {
